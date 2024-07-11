@@ -19,7 +19,7 @@ The data files required for these steps are located in the `Datasets` directory 
 
 ### Steps and Data Usage
 - **Step 1:** Utilizes `Original Data.xlsx`. The decomposed results are automatically integrated into this file post-execution. Note that due to non-fixed random seeds, results may vary and not align perfectly with `CEEMDAN Decomposed Data.xlsx`.
-- **Steps 2 to 4:** Employ `CEEMDAN Decomposed Data.xlsx` for extended window applications, EMNN training, and subsequent decomposition. Specifically, `Step 3` involves training the EMNN model. To ensure reproducibility without re-training, we provide a pre-trained EMNN model available at [Google Drive](https://drive.google.com/file/d/1aSySuc8VTQAjtVHrzhjFFm3THMGvIrQL/view?usp=sharing). Users can bypass training by using this model and proceed directly to `Step 4`.
+- **Steps 2 to 4:** Employ `CEEMDAN Decomposed Data.xlsx` for extended window applications, EMNN training, and subsequent decomposition. Specifically, `Step 3` involves training the EMNN model. To ensure reproducibility without re-training, we provide pre-trained EMNN models available at [Google Drive](https://drive.google.com/file/d/1aSySuc8VTQAjtVHrzhjFFm3THMGvIrQL/view?usp=sharing). Users can bypass training by using this model and proceed directly to `Step 4`.
 
 ## Section 2: Forecasting Using TFT (Temporal Fusion Transformer) Optimized by TPE (Tree-structured Parzen Estimator)
 
