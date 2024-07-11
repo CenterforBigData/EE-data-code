@@ -1,4 +1,3 @@
-# EE-data-code
 # Reproducible Results for WTI and Brent Price Predictions
 
 ## Overview
