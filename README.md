@@ -25,16 +25,19 @@ The data files required for these steps are located in the `Datasets` directory 
 - **Steps 2 to 4: Extended Window Application, EMNN Training, and Prediction/Decomposition**
   - These steps utilize `CEEMDAN Decomposed Data.xlsx`, which contains the data prepared in Step 1. Here, we perform further decomposition through the extended window application, train the Enhancing Mapping Neural Network (EMNN), and execute the prediction/decomposition processes:
     - **Step 2: Extended Window Application** — Applies further decomposition techniques on the data, preparing it for EMNN training.
-    - **Step 3: Training the Enhancing Mapping Neural Network (EMNN)** — This crucial step involves training the EMNN model. Due to the inherent randomness in model training, each trained EMNN model might differ slightly. To ensure that readers can reproduce the exact results from our study, we provide pre-trained EMNN models available at [Google Drive](https://drive.google.com/file/d/1aSySuc8VTQAjtVHrzhjFFm3THMGvIrQL/view?usp=sharing). Readers wishing to replicate the results without retraining can directly use this model and skip to the next step.
+    - **Step 3: Training the Enhancing Mapping Neural Network (EMNN)** — This crucial step involves training the EMNN model. Due to the inherent randomness in model training, each trained EMNN model might differ slightly. To ensure that readers can reproduce the exact results from our study, we provide pre-trained EMNN models available at [Google Drive](https://drive.google.com/file/d/1aSySuc8VTQAjtVHrzhjFFm3THMGvIrQL/view?usp=sharing). Readers wishing to replicate the results without retraining should download these models, replace the `EMNN_saved_models` folder in the repository root with the unzipped folder from the drive, and then proceed directly to the next step.
     - **Step 4: Prediction/Decomposition** — The final step takes the trained EMNN model and applies it to the dataset for final predictions. Once completed, the newly decomposed subsequences are automatically updated in `CEEMDAN Decomposed Data.xlsx`. Users can compare these updated results with the `EMNN Decomposed Data.xlsx` to verify the consistency and successful replication of the experimental results.
+
 
 ## Section 2: Forecasting Using TFT (Temporal Fusion Transformer) Optimized by TPE (Tree-structured Parzen Estimator)
 
 This section is dedicated to the prediction phase using the TFT model, optimized by the TPE algorithm. We provide separate notebooks for the WTI (`WTI_TFT.ipynb`) and Brent (`Brent_TFT.ipynb`) datasets.
 
 ### Model Availability and Training
-- **Pre-trained Models:** For users focused on replicating our exact results, we offer pre-trained TFT models located in the `TFT_saved_models` directory, accessible via [Google Drive](https://drive.google.com/file/d/1SSU1ltOUvFuYxi7ro-StC1aIaXzNzkd5/view?usp=sharing).
-- **Training Your Own Model:** We've embedded the optimal hyperparameters within the notebooks for ease of use. However, those interested in performing their own hyperparameter optimization can uncomment and execute the TPE code blocks provided.
+
+- **Pre-trained Models:** For users focused on replicating our exact results, we offer pre-trained TFT models. Due to the file size limitations on GitHub, the actual models are not hosted in the repository. To use the pre-trained models, download them from [Google Drive](https://drive.google.com/file/d/1SSU1ltOUvFuYxi7ro-StC1aIaXzNzkd5/view?usp=sharing). After downloading, unzip the file and replace the `TFT_saved_models` folder in the repository root with the unzipped folder. This ensures that the necessary model files are in the correct location for running the corresponding code.
+
+- **Training Your Own Model:** We've embedded the optimal hyperparameters within the notebooks for ease of use. For those interested in performing their own hyperparameter optimization, you can uncomment and execute the TPE code blocks provided. This allows for personalization and fine-tuning of the model according to specific needs or computational resources available.
 
 ### Computational Considerations
 Due to the computationally intensive nature of the TFT model training (especially considering a 90-day testing period with daily predictions), users might need to adjust the training start date within the code to manage the computational load effectively. This adjustment can help mitigate potential system overloads during extensive training sessions.
