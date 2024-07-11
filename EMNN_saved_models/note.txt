@@ -1,0 +1,8 @@
+Note on EMNN Saved Models
+
+Due to the size limitations on GitHub for file uploads, the trained optimal models for EMNN could not be directly hosted in this repository. Instead, we have compressed these models into a zip file and stored them on Google Drive.
+
+You can download the zipped models from the following link:
+https://drive.google.com/file/d/1aSySuc8VTQAjtVHrzhjFFm3THMGvIrQL/view?usp=sharing
+
+After downloading, please unzip the file and place the resulting folder into the root directory of the repository. This setup will allow you to run the corresponding code seamlessly and replicate our experimental results as intended.
