@@ -19,7 +19,6 @@ pip install -r requirements.txt
 
 This will install all necessary dependencies with their specific versions as used in our experiments.
 
-
 ## Section 1: Rolling Decomposition Using EMNN (Enhanced Mapping Neural Network)
 
 This section includes detailed Jupyter notebooks for both WTI and Brent datasets, named `WTI_EMNN.ipynb` and `Brent_EMNN.ipynb`, respectively. These notebooks correspond to the four steps outlined in our paper:
