@@ -3,6 +3,23 @@
 ## Overview
 This repository contains all necessary data and code to reproduce the results of our paper on predicting WTI and Brent prices using a two-step approach. First, we apply the Enhanced Mapping Neural Network (EMNN) model for rolling decomposition of the datasets. Subsequently, we train and predict using the Temporal Fusion Transformer (TFT) model, optimized by the Tree-structured Parzen Estimator (TPE), on the decomposed data. The predictions from these sub-series are then aggregated to obtain the final forecast values.
 
+## Environment Setup
+
+Before running the code in this repository, please ensure that you have the correct Python version and all necessary libraries installed.
+
+### Python Version
+This project uses Python 3.7.
+
+### Required Libraries
+We have provided a `requirements.txt` file in the root directory of this repository. To install all required libraries, run the following command:
+
+```
+pip install -r requirements.txt
+```
+
+This will install all necessary dependencies with their specific versions as used in our experiments.
+
+
 ## Section 1: Rolling Decomposition Using EMNN (Enhanced Mapping Neural Network)
 
 This section includes detailed Jupyter notebooks for both WTI and Brent datasets, named `WTI_EMNN.ipynb` and `Brent_EMNN.ipynb`, respectively. These notebooks correspond to the four steps outlined in our paper:
